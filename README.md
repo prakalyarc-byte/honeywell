@@ -62,3 +62,5 @@ https://drive.google.com/file/d/1q4T2th_b2sd2bHDMqjXnl5n1nQI39Pkl/view?usp=shari
 | Building models (.idf) | [`models/`](models/) |
 | Savings dashboard | [`web/index.html`](web/index.html) · [data](web/demo-run.json) |
 | Architecture document | [`web/architecture.md`](web/architecture.md) |
+| Demo Video | https://drive.google.com/file/d/1q4T2th_b2sd2bHDMqjXnl5n1nQI39Pkl/view?usp=sharing |
+
