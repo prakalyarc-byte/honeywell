@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+*.egg-info/
+.pytest_cache/
+runs/
+web/latest.json
+models/*.epJSON
+models/eplusout.*
+optimized-output.txt
+docs/

@@ -1,0 +1,27 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+
+  worker:
+    build: .
+    depends_on:
+      - ollama
+    environment:
+      ENERGYPLUS_DIR: /EnergyPlus-25.1.0-68a4a7c774-Linux-Ubuntu22.04-x86_64
+      OLLAMA_URL: http://ollama:11434
+      OLLAMA_MODEL: ${OLLAMA_MODEL:-qwen3:8b}
+      OLLAMA_TIMEOUT_SECONDS: ${OLLAMA_TIMEOUT_SECONDS:-120}
+      LLM_PROVIDER: ${LLM_PROVIDER:-groq}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      GROQ_MODEL: ${GROQ_MODEL:-openai/gpt-oss-120b}
+    volumes:
+      - ./models:/app/models
+      - ./runs:/app/runs
+      - ./web:/app/web
+
+volumes:
+  ollama-data:

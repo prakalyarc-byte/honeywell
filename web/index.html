@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Eco-Loop autonomous EnergyPlus building optimization demo">
+  <meta name="theme-color" content="#f2f0e8">
+  <title>Eco-Loop Building Agents</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to Results</a>
+  <header>
+    <p class="eyebrow">HONEYWELL CAMPUS CONNECT</p>
+    <h1>Eco-Loop <span>Building Agents</span></h1>
+    <p>Physics-backed autonomous HVAC control. Comfort first, savings measured.</p>
+    <div class="status" aria-live="polite"><span id="status-dot" aria-hidden="true"></span><strong id="mode">Loading verified run…</strong></div>
+  </header>
+  <main id="main">
+    <section id="metrics" class="metrics" aria-label="Performance metrics"></section>
+    <section class="panel wide">
+      <div class="panel-title"><h2>Facility Demand</h2><p>Baseline versus autonomous control</p></div>
+      <svg id="power-chart" viewBox="0 0 1000 300" role="img" aria-label="Power comparison chart"></svg>
+    </section>
+    <section class="panel wide">
+      <div class="panel-title"><h2>Supervisory Setpoints</h2><p>Heating and cooling actions</p></div>
+      <svg id="setpoint-chart" viewBox="0 0 1000 300" role="img" aria-label="Heating and cooling setpoint chart"></svg>
+    </section>
+    <section class="panel">
+      <div class="panel-title"><h2>Zone Comfort</h2><p id="clock">Simulated hour 0</p></div>
+      <div id="zones" class="zones"></div>
+    </section>
+    <section class="panel">
+      <div class="panel-title"><h2>Agent Actions</h2><p>Validated MCP activity</p></div>
+      <div id="audit" class="audit" aria-live="polite"></div>
+    </section>
+    <section class="controls" aria-label="Replay controls">
+      <button id="play" type="button">Pause Replay</button>
+      <label>Replay Speed <input id="speed" name="replay-speed" type="range" min="1" max="20" value="8"></label>
+      <a href="?live=1">Open Live Feed</a>
+      <a href="./">Open Verified Replay</a>
+      <a href="architecture.md">Architecture</a>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

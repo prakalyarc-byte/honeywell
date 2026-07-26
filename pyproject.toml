@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eco-loop"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["fastmcp==3.2.4"]
+
+[tool.setuptools.packages.find]
+include = ["worker*"]
+
+[tool.ruff]
+line-length = 100
