@@ -53,3 +53,12 @@ One building, one London weather week, shared zone schedules, trigger-based agen
 
 ## Demo video LINK
 https://drive.google.com/file/d/1q4T2th_b2sd2bHDMqjXnl5n1nQI39Pkl/view?usp=sharing
+
+## Deliverables
+
+| Deliverable | Location |
+|---|---|
+| Source code | [`worker/`](worker/), [`web/`](web/) |
+| Building models (.idf) | [`models/`](models/) |
+| Savings dashboard | [`web/index.html`](web/index.html) · [data](web/demo-run.json) |
+| Architecture document | [`web/architecture.md`](web/architecture.md) |
