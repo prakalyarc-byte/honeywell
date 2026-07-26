@@ -51,9 +51,6 @@ These external artifacts are not in the workspace and must be produced from the 
 
 One building, one London weather week, shared zone schedules, trigger-based agent decisions, bundled grid-intensity data, estimated flat electricity tariff, and operational carbon only. See `docs/requirement-matrix.md` for full compliance status.
 
-## Demo video LINK
-https://drive.google.com/file/d/1q4T2th_b2sd2bHDMqjXnl5n1nQI39Pkl/view?usp=sharing
-
 ## Deliverables
 
 | Deliverable | Location |
