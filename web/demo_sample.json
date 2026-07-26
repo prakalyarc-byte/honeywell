@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "verified": true,
+    "source": "EnergyPlus 25.1",
+    "model": "5ZoneAirCooled",
+    "weather": "London/Gatwick",
+    "electricity_price_gbp_per_kwh": 0.28
+  },
+  "baseline": {
+    "metadata": {
+      "mode": "baseline",
+      "model": "qwen2.5:1.5b",
+      "verified": true
+    },
+    "telemetry": [
+      {
+        "hour": 0,
+        "occupied": false,
+        "outdoor_c": 16.3,
+        "facility_energy_j": 427500,
+        "hvac_energy_j": 0,
+        "facility_demand_w": 475,
+        "carbon_g_per_kwh": 87,
+        "current_heating_c": 16.7,
+        "current_cooling_c": 29.4,
+        "zones": [
+          {
+            "name": "PLENUM-1",
+            "temperature_c": 22.2,
+            "humidity_pct": 56.3,
+            "co2_ppm": 792.2,
+            "occupants": 0,
+            "pmv": 0
+          },
+          {
+            "name": "SPACE1-1",
+            "temperature_c": 20.8,
+            "humidity_pct": 59.6,
+            "co2_ppm": 690.1,
+            "occupants": 0,
+            "pmv": -0.81
+          }
+        ]
+      },
+      {
+        "hour": 1,
+        "occupied": false,
+        "outdoor_c": 15.5,
+        "facility_energy_j": 421000,
+        "hvac_energy_j": 0,
+        "facility_demand_w": 468,
+        "carbon_g_per_kwh": 87,
+        "current_heating_c": 16.7,
+        "current_cooling_c": 29.4,
+        "zones": [
+          {
+            "name": "PLENUM-1",
+            "temperature_c": 22.1,
+            "humidity_pct": 56.8,
+            "co2_ppm": 791.9,
+            "occupants": 0,
+            "pmv": 0
+          },
+          {
+            "name": "SPACE1-1",
+            "temperature_c": 20.7,
+            "humidity_pct": 60,
+            "co2_ppm": 690.1,
+            "occupants": 0,
+            "pmv": -0.83
+          }
+        ]
+      }
+    ]
+  },
+  "optimized": {
+    "metadata": {
+      "mode": "demo",
+      "model": "sample-controller",
+      "verified": true
+    },
+    "telemetry": [
+      {
+        "hour": 0,
+        "occupied": false,
+        "outdoor_c": 16.3,
+        "facility_energy_j": 398000,
+        "hvac_energy_j": 0,
+        "facility_demand_w": 442,
+        "carbon_g_per_kwh": 87,
+        "current_heating_c": 16.3,
+        "current_cooling_c": 29.8,
+        "zones": [
+          {
+            "name": "PLENUM-1",
+            "temperature_c": 22,
+            "humidity_pct": 56.1,
+            "co2_ppm": 790.8,
+            "occupants": 0,
+            "pmv": 0
+          },
+          {
+            "name": "SPACE1-1",
+            "temperature_c": 20.9,
+            "humidity_pct": 59.2,
+            "co2_ppm": 688.4,
+            "occupants": 0,
+            "pmv": -0.79
+          }
+        ]
+      }
+    ]
+  }
+}
